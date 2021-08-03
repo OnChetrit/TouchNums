@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Touch Numbers</title>
+  </head>
+  <body onload="init()">
+    <h1 class="header">Touch The Numbers</h1>
+    <div class="container">
+      <div class="game">
+        <button id="easy" onclick="onLevelClicked(event)" class="level">
+          Easy
+        </button>
+        <button id="hard" onclick="onLevelClicked(event)" class="level">
+          Hard
+        </button>
+        <button id="extreme" onclick="onLevelClicked(event)" class="level">
+          Extreme
+        </button>
+        <div>
+          <button onclick="onStartOver()" class="play">Play Again</button>
+        </div>
+        <div class="table">
+          <table>
+            <tbody class="board"></tbody>
+          </table>
+          <div class="timer"><span>00.000</span></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/util.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

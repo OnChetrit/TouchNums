@@ -1,0 +1,95 @@
+* {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+}
+
+h1 {
+  color: aliceblue;
+  margin: auto;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.game {
+  height: 520px;
+  width: 500px;
+  background-color: rgb(32, 32, 32);
+  border: 1px solid gray;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.play {
+  margin-top: 0px;
+  height: 40px;
+  width: 120px;
+  visibility: hidden;
+}
+
+table {
+  display: inline-block;
+  border-spacing: 4px;
+  align-self: center;
+}
+
+td {
+  border-radius: 10px;
+  height: 45px;
+  width: 45px;
+  background-color: lightyellow;
+  border: 1px solid black;
+  text-align: center;
+}
+
+td:hover {
+  transition: background-color 0.2s;
+  background-color: lightblue;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+td:active {
+  background-color: white;
+}
+
+.level,
+.play {
+  display: inline-block;
+  padding: 0.5em 1.7em;
+  margin: 0.5em 0.5em;
+  background-color: black;
+  border: 0.16em solid rgb(255, 255, 255);
+  border-radius: 2em;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  transition: color 0.2s;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.level:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+.play:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+.timer {
+  font-size: 60px;
+  color: #ffffff;
+}
