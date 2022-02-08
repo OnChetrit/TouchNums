@@ -76,7 +76,8 @@ function onCellClicked(elCell, cellNum) {
         gMove.play();
         gNextNum++
     }
-    if (+elCell.innerText === gNumsLength) {
+
+    if (+elCell.innerText === gNumsLength && +elCell.innerText === gNextNum - 1) {
         clearInterval(gTimerInterval);
     }
     if (cellNum === 1) startTime();

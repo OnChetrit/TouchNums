@@ -6,35 +6,38 @@ body {
   justify-content: center;
   text-align: center;
   background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 h1 {
   color: aliceblue;
   margin: auto;
+  margin: 15px 0;
+  font-size: clamp(1.5rem, 5vw, 3.5rem);
 }
 
 .container {
   align-items: center;
   display: flex;
   justify-content: center;
-  height: 100%;
   width: 100%;
+  flex: 1;
 }
 
 .game {
-  height: 520px;
   width: 500px;
   background-color: rgb(32, 32, 32);
   border: 1px solid gray;
   border-radius: 20px;
   text-align: center;
+  margin: 0 15px;
 }
 
 .play {
   margin-top: 0px;
-  height: 40px;
-  width: 120px;
-  visibility: hidden;
 }
 
 table {
@@ -45,11 +48,19 @@ table {
 
 td {
   border-radius: 10px;
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
   background-color: lightyellow;
   border: 1px solid black;
   text-align: center;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+@media (min-width: 760px) {
+  td {
+    height: 60px;
+    width: 60px;
+  }
 }
 
 td:hover {
@@ -66,17 +77,39 @@ td:active {
 .level,
 .play {
   display: inline-block;
-  padding: 0.5em 1.7em;
+  padding: 0.4em 1.2em;
   margin: 0.5em 0.5em;
   background-color: black;
   border: 0.16em solid rgb(255, 255, 255);
   border-radius: 2em;
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
-  transition: all 0.3s ease;
-  transition: color 0.2s;
-  transition: background-color 0.2s;
+  /* transition: all 0.3s ease; */
+  transition: color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
   cursor: pointer;
+  font-size: clamp(0.7rem, 3vw, 1rem);
+}
+
+.levels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+@media (min-width: 460px) {
+  .level,
+  .play {
+    padding: 0.5em 1.7em;
+  }
+}
+
+@media (min-width: 760px) {
+  .level,
+  .play {
+    padding: 0.7em 2em;
+  }
 }
 
 .level:hover {
